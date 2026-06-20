@@ -1,0 +1,45 @@
+{
+  "name": "ordinary/router",
+  "description": "Fast PHP 8.5 HTTP router with a global parameter registry, named routes, URL generation, and attribute-based route discovery.",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "OrdinaryPHP Contributors"
+    }
+  ],
+  "require": {
+    "php": "^8.5",
+    "psr/http-message": "^2.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^13.0",
+    "phpstan/phpstan": "^2.1",
+    "phpstan/phpstan-strict-rules": "^2.0",
+    "phpstan/phpstan-phpunit": "^2.0",
+    "nyholm/psr7": "^1.8",
+    "psr/simple-cache": "^3.0",
+    "psr/cache": "^3.0"
+  },
+  "suggest": {
+    "psr/simple-cache": "Use a PSR-16 compatible cache via Psr16Cache adapter",
+    "psr/cache": "Use a PSR-6 compatible cache pool via Psr6Cache adapter"
+  },
+  "autoload": {
+    "psr-4": {
+      "Ordinary\\Router\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Ordinary\\Router\\Tests\\": "tests/"
+    }
+  },
+  "config": {
+    "sort-packages": true,
+    "optimize-autoloader": true,
+    "preferred-install": "dist"
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
+}
